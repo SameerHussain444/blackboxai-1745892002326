@@ -1,0 +1,73 @@
+/* pro.css - Styling for Calculator */
+
+body {
+  background-color: #f3f4f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #1e293b;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#input {
+  background-color: #0f172a;
+  color: #f8fafc;
+  font-size: 2rem;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  text-align: right;
+  outline: none;
+  user-select: none;
+}
+
+#buttons, .calculator > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  background-color: #334155;
+  color: #f8fafc;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #475569;
+}
+
+button.operator {
+  background-color: #2563eb;
+}
+
+button.operator:hover {
+  background-color: #1d4ed8;
+}
+
+button.equal {
+  background-color: #16a34a;
+  grid-column: span 1;
+}
+
+button.equal:hover {
+  background-color: #15803d;
+}
